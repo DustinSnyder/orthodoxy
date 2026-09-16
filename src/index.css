@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-orthodox-navy: #0b1d3a;
+  --color-orthodox-deep: #13294b;
+  --color-orthodox-blue: #1a3a5c;
+  --color-orthodox-gold: #c9a227;
+  --color-orthodox-gold-light: #e8d48b;
+  --color-orthodox-cream: #f7f1e3;
+  --color-orthodox-parchment: #efe6d5;
+  --color-orthodox-ink: #1a1a1a;
+  --color-orthodox-muted: #5c6b7a;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: var(--font-body);
+  background: var(--color-orthodox-navy);
+  color: var(--color-orthodox-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.prose-orthodox p {
+  margin-bottom: 0.85rem;
+  line-height: 1.65;
+}
+
+.prose-orthodox h3 {
+  font-family: var(--font-display);
+  color: var(--color-orthodox-gold-light);
+  font-size: 1.25rem;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}
