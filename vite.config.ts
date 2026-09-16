@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/orthodoxy/',
   plugins: [
     react(),
     tailwindcss(),
@@ -19,8 +20,8 @@ export default defineConfig({
         background_color: '#0b1d3a',
         display: 'standalone',
         orientation: 'portrait-primary',
-        start_url: '/',
-        scope: '/',
+        start_url: '/orthodoxy/',
+        scope: '/orthodoxy/',
         lang: 'en',
         categories: ['education', 'lifestyle'],
         icons: [
@@ -44,7 +45,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,json}'],
-        navigateFallback: '/index.html',
+        navigateFallback: '/orthodoxy/index.html',
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/commons\.wikimedia\.org\/.*/i,
