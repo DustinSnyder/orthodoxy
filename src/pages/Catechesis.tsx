@@ -10,6 +10,24 @@ export function Catechesis() {
     <div className="space-y-4 pb-8">
       <h1 className="font-display text-3xl text-orthodox-gold-light">Catechesis</h1>
       <PastoralDisclaimer compact />
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+        <h2 className="font-display text-lg text-orthodox-gold">Orientation extras</h2>
+        <p className="mt-1 text-sm text-orthodox-cream/75">
+          Quick pastoral pages for daily life as a catechumen from a Protestant background.
+        </p>
+        <div className="mt-3 flex flex-col gap-2">
+          <Link to="/questions" className="text-sm font-semibold text-orthodox-gold-light underline">
+            Questions you should be asking
+          </Link>
+          <Link to="/family" className="text-sm font-semibold text-orthodox-gold-light underline">
+            Friends, family, spouse & children
+          </Link>
+          <Link to="/priest" className="text-sm font-semibold text-orthodox-gold-light underline">
+            Addressing Father Symeon & blessings
+          </Link>
+        </div>
+      </section>
+
       <div className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep p-4">
         <p className="text-sm text-orthodox-cream/80">
           Progress: {completed.length} / {total} lessons

@@ -136,6 +136,33 @@ export function Today() {
         </section>
       )}
 
+      <section className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4">
+        <h2 className="font-display text-xl text-orthodox-gold">Pastoral guides</h2>
+        <p className="mt-1 text-sm text-orthodox-cream/80">
+          Questions to ask · family & household · addressing Father Symeon
+        </p>
+        <div className="mt-3 grid grid-cols-1 gap-2">
+          <Link
+            to="/questions"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+          >
+            Top questions for newcomers →
+          </Link>
+          <Link
+            to="/family"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+          >
+            Friends, spouse & children →
+          </Link>
+          <Link
+            to="/priest"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+          >
+            Priest address & blessings →
+          </Link>
+        </div>
+      </section>
+
       <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Audio suggestion</h2>
         <p className="mt-1 text-sm">{entry.audio.title}</p>

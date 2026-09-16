@@ -33,7 +33,8 @@ npm run preview   # optional: serve the production build
 1. **Today** — date, fasting awareness, morning/evening prayer checks, scripture pointers, saint + icon, one catechesis card, Ancient Faith audio link.
 2. **Learn (Catechesis)** — 13 lessons across modules with Protestant-bridge callouts; mark complete; progress saved locally.
 3. **Prayer** — morning, evening, meals, Jesus Prayer + browser TTS “Read aloud”.
-4. **More** — Fasting, Scripture, Saints & Fathers, Icons, Library, Parish.
+4. **More** — Fasting, Scripture, Saints & Fathers, Icons, Library, Parish, plus pastoral guides.
+5. **Pastoral guides** — Questions to ask (`/questions`), Family & friends / spouse & children (`/family`), Priest & blessings (`/priest`).
 
 ### Suggested rhythm
 
@@ -61,7 +62,7 @@ npm run preview   # optional: serve the production build
 ## Project layout
 
 ```
-src/data/        seed: lessons, prayers, saints, icons, daily, fasting, library, scripture
+src/data/        seed: lessons, prayers, saints, icons, daily, fasting, library, scripture, questions, family, priest
 src/pages/       route screens
 src/components/  layout, disclaimer, TTS, icon image, Protestant bridge
 src/hooks/       localStorage progress / streak / prayer checks
@@ -81,6 +82,28 @@ src/hooks/       localStorage progress / streak / prayer checks
 | `/icons` | Gallery + veneration clarification |
 | `/library` | Spine books & official links |
 | `/parish` | St. Raphael info & service times |
-| `/more` | Hub to secondary sections |
+| `/questions` | Top questions newcomers should ask |
+| `/family` | Friends & family · spouse & children |
+| `/priest` | Addressing Father Symeon & blessings |
+| `/more` | Hub to secondary + pastoral sections |
 
 Built for phone-first use: large tap targets, deep blue / gold theme, alt text on icons, reduce-motion friendly CSS.
+
+## Progressive Web App (PWA)
+
+This app installs like a phone app (Add to Home Screen) and caches the shell + catechesis/prayer content for offline daily use.
+
+### Install
+
+- **Android Chrome:** open the site over **HTTPS** → browser menu → **Install app** / **Add to Home Screen**.
+- **iOS Safari:** open over **HTTPS** → Share → **Add to Home Screen**.
+- Install prompts require a secure context (HTTPS or localhost). GitHub Pages, Netlify, Vercel, etc. work fine.
+
+### Develop / build
+
+```bash
+npm run build   # generates service worker + manifest via vite-plugin-pwa
+npm run preview # test installability locally
+```
+
+After a new deploy, the service worker updates in the background; reload when prompted (or on next visit) to get the latest lessons.
