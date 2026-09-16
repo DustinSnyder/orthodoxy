@@ -139,7 +139,7 @@ export function Today() {
       <section className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Pastoral guides</h2>
         <p className="mt-1 text-sm text-orthodox-cream/80">
-          Questions to ask · family & household · addressing Father Symeon
+          Questions · family · priest · Protestant conversion challenges
         </p>
         <div className="mt-3 grid grid-cols-1 gap-2">
           <Link
@@ -159,6 +159,12 @@ export function Today() {
             className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
           >
             Priest address & blessings →
+          </Link>
+          <Link
+            to="/challenges"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+          >
+            Protestant conversion challenges →
           </Link>
         </div>
       </section>

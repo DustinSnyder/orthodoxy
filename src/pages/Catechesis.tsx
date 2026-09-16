@@ -25,6 +25,9 @@ export function Catechesis() {
           <Link to="/priest" className="text-sm font-semibold text-orthodox-gold-light underline">
             Addressing Father Symeon & blessings
           </Link>
+          <Link to="/challenges" className="text-sm font-semibold text-orthodox-gold-light underline">
+            Challenges Protestants face converting
+          </Link>
         </div>
       </section>
 

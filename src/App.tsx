@@ -14,6 +14,7 @@ import { More } from './pages/More'
 import { Questions } from './pages/Questions'
 import { Family } from './pages/Family'
 import { Priest } from './pages/Priest'
+import { Challenges } from './pages/Challenges'
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="questions" element={<Questions />} />
           <Route path="family" element={<Family />} />
           <Route path="priest" element={<Priest />} />
+          <Route path="challenges" element={<Challenges />} />
           <Route path="more" element={<More />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

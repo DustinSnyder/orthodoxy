@@ -5,6 +5,7 @@ const pastoral = [
   { to: '/questions', title: 'Questions to ask', desc: '18 essential newcomer / catechumen questions' },
   { to: '/family', title: 'Family & friends', desc: 'Unsupportive loved ones · spouse & children' },
   { to: '/priest', title: 'Priest & blessings', desc: 'Father Symeon · how to ask a blessing' },
+  { to: '/challenges', title: 'Conversion challenges', desc: 'Protestant hurdles · pastoral ways through' },
 ]
 
 const links = [
