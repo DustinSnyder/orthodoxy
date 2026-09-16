@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { icons } from '../data/icons'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { ProtestantBridge } from '../components/ProtestantBridge'
 
 export function IconsGallery() {
@@ -11,16 +10,15 @@ export function IconsGallery() {
   return (
     <div className="space-y-4 pb-10">
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Icons</h1>
-      <PastoralDisclaimer compact />
 
       <ProtestantBridge>
         Orthodoxy worships God alone. Icons are venerated: honor given to the person depicted (the prototype)
         passes to them, as kissing a photo of a loved one honors the person — not the paper. The Incarnation
-        makes holy images of Christ possible. If this still feels uncomfortable, talk with Fr. Symeon; go
-        slowly and keep Christ at the center.
+        makes holy images of Christ possible. If this still feels uncomfortable, go slowly and keep Christ at
+        the center.
       </ProtestantBridge>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4 text-sm">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4 text-sm">
         <h2 className="font-display text-xl text-orthodox-gold">Veneration vs worship</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>
@@ -51,7 +49,7 @@ export function IconsGallery() {
         ))}
       </div>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-2xl text-orthodox-gold">{current.title}</h2>
         <p className="mt-1 text-sm">{current.description}</p>
         <button

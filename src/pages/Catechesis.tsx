@@ -7,7 +7,6 @@ import {
   type LessonTrack,
 } from '../data/lessons'
 import { useLessonProgress } from '../hooks/useProgress'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 
 const TRACKS: { id: LessonTrack | 'all'; label: string }[] = [
   { id: 'all', label: 'All tracks' },
@@ -47,13 +46,12 @@ export function Catechesis() {
       <p className="text-sm text-orthodox-cream/80">
         52-week Antiochian church-year companion ({church.yearLabel}). Week {church.week} of 52.
       </p>
-      <PastoralDisclaimer compact />
-      <p className="rounded-xl border border-orthodox-gold/30 bg-orthodox-deep px-3 py-2 text-xs text-orthodox-cream/75">
-        Not an official AOCEM Sunday School curriculum — a personal companion for St. Raphael catechumens.
-        Fr. Symeon overrides. Sources linked to antiochian.org.
+      <p className="rounded-xl border border-orthodox-gold/55 bg-orthodox-deep px-3 py-2 text-xs text-orthodox-cream/75">
+        A personal companion for study — not an official AOCEM Sunday School curriculum. Sources linked to
+        antiochian.org.
       </p>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-lg text-orthodox-gold">Orientation extras</h2>
         <p className="mt-1 text-sm text-orthodox-cream/75">
           Quick pastoral pages for daily life as a catechumen from a Protestant background.
@@ -92,7 +90,7 @@ export function Catechesis() {
         </section>
       )}
 
-      <div className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep p-4">
+      <div className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <p className="text-sm text-orthodox-cream/80">
           Progress: {completed.length} / {total} lessons (of 52)
         </p>
@@ -108,11 +106,11 @@ export function Catechesis() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-3 sm:flex-row sm:flex-wrap">
+      <div className="flex flex-col gap-2 rounded-2xl border border-orthodox-gold/50 bg-orthodox-deep p-3 sm:flex-row sm:flex-wrap">
         <label className="text-xs text-orthodox-muted">
           Track
           <select
-            className="mt-1 block w-full rounded-lg border border-orthodox-gold/30 bg-orthodox-parchment px-2 py-2 text-sm text-orthodox-ink"
+            className="mt-1 block w-full rounded-lg border border-orthodox-gold/55 bg-orthodox-parchment px-2 py-2 text-sm text-orthodox-ink"
             value={trackFilter}
             onChange={(e) => setTrackFilter(e.target.value as LessonTrack | 'all')}
           >
@@ -126,7 +124,7 @@ export function Catechesis() {
         <label className="text-xs text-orthodox-muted">
           Season
           <select
-            className="mt-1 block w-full rounded-lg border border-orthodox-gold/30 bg-orthodox-parchment px-2 py-2 text-sm text-orthodox-ink"
+            className="mt-1 block w-full rounded-lg border border-orthodox-gold/55 bg-orthodox-parchment px-2 py-2 text-sm text-orthodox-ink"
             value={seasonFilter}
             onChange={(e) => setSeasonFilter(e.target.value)}
           >
@@ -141,7 +139,7 @@ export function Catechesis() {
         <label className="text-xs text-orthodox-muted">
           Group by
           <select
-            className="mt-1 block w-full rounded-lg border border-orthodox-gold/30 bg-orthodox-parchment px-2 py-2 text-sm text-orthodox-ink"
+            className="mt-1 block w-full rounded-lg border border-orthodox-gold/55 bg-orthodox-parchment px-2 py-2 text-sm text-orthodox-ink"
             value={groupBy}
             onChange={(e) => setGroupBy(e.target.value as 'track' | 'season' | 'week')}
           >
@@ -229,7 +227,7 @@ function LessonRow({
         className={`tap-target flex items-start justify-between gap-3 rounded-2xl border px-4 py-3 ${
           isCurrent
             ? 'border-orthodox-gold bg-orthodox-gold/10'
-            : 'border-orthodox-gold/30 bg-orthodox-deep hover:border-orthodox-gold/50'
+            : 'border-orthodox-gold/55 bg-orthodox-deep hover:border-orthodox-gold/70'
         }`}
       >
         <div>

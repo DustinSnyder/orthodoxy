@@ -1,6 +1,5 @@
 import { useMemo, useState } from 'react'
 import { topQuestions } from '../data/questions'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { ProtestantBridge } from '../components/ProtestantBridge'
 import { Link } from 'react-router-dom'
 
@@ -20,16 +19,15 @@ export function Questions() {
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Questions to ask</h1>
       <p className="text-sm text-orthodox-cream/85">
         Excellent questions a newcomer or catechumen <em>should</em> be asking — with short Orthodox
-        answers. Use these to study and to prepare conversations with Fr. Symeon.
+        answers. Use these to study and to prepare thoughtful conversations.
       </p>
-      <PastoralDisclaimer compact />
 
       <div className="flex flex-wrap gap-2">
         <button
           type="button"
           onClick={() => setTheme('All')}
           className={`tap-target rounded-full px-3 py-2 text-xs font-semibold ${
-            theme === 'All' ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/40'
+            theme === 'All' ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/60'
           }`}
         >
           All ({topQuestions.length})
@@ -40,7 +38,7 @@ export function Questions() {
             type="button"
             onClick={() => setTheme(t)}
             className={`tap-target rounded-full px-3 py-2 text-xs font-semibold ${
-              theme === t ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/40'
+              theme === t ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/60'
             }`}
           >
             {t}
@@ -52,7 +50,7 @@ export function Questions() {
         {filtered.map((q, idx) => {
           const open = openId === q.id
           return (
-            <li key={q.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep overflow-hidden">
+            <li key={q.id} className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep overflow-hidden">
               <button
                 type="button"
                 className="tap-target flex w-full items-start gap-3 px-4 py-3 text-left"
@@ -73,10 +71,10 @@ export function Questions() {
                 </span>
               </button>
               {open && (
-                <div className="space-y-3 border-t border-orthodox-gold/25 px-4 py-4 text-sm">
+                <div className="space-y-3 border-t border-orthodox-gold/50 px-4 py-4 text-sm">
                   <p className="leading-relaxed text-orthodox-cream/90">{q.answer}</p>
                   {q.protestantBridge && <ProtestantBridge>{q.protestantBridge}</ProtestantBridge>}
-                  <p className="rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-2 text-orthodox-gold-light">
+                  <p className="rounded-xl border border-orthodox-gold/55 bg-orthodox-parchment px-3 py-2 text-orthodox-gold-light">
                     <strong>Ask your priest:</strong> {q.askPriest}
                   </p>
                 </div>

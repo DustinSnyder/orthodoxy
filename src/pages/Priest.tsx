@@ -1,5 +1,4 @@
 import { addressTips, blessingSteps, priestPastoralNotes, whenToAskBlessing } from '../data/priest'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { Link } from 'react-router-dom'
 
 export function Priest() {
@@ -10,9 +9,8 @@ export function Priest() {
         How to address clergy and ask a blessing in Antiochian / US parish life — especially with{' '}
         <strong>Father Symeon</strong> at Saint Raphael.
       </p>
-      <PastoralDisclaimer compact />
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Quick answer</h2>
         <p className="mt-2 text-sm leading-relaxed">
           Address him as <span className="text-orthodox-gold-light">Father Symeon</span>. In conversation,{' '}
@@ -25,14 +23,14 @@ export function Priest() {
       <section className="space-y-3">
         <h2 className="font-display text-xl text-orthodox-gold">Addressing clergy</h2>
         {addressTips.map((t) => (
-          <div key={t.title} className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep px-4 py-3">
+          <div key={t.title} className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep px-4 py-3">
             <p className="font-semibold text-orthodox-gold-light">{t.title}</p>
             <p className="mt-1 text-sm text-orthodox-cream/85">{t.detail}</p>
           </div>
         ))}
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">When to ask a blessing</h2>
         <ul className="mt-3 space-y-2">
           {whenToAskBlessing.map((w) => (
@@ -46,12 +44,12 @@ export function Priest() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-b from-orthodox-deep to-orthodox-blue p-4">
+      <section className="rounded-2xl border border-orthodox-gold/60 bg-gradient-to-b from-orthodox-deep to-orthodox-blue p-4">
         <h2 className="font-display text-xl text-orthodox-gold">How to receive a blessing</h2>
         <p className="mt-1 text-xs text-orthodox-muted">Visual step list — practice once in your mind before Sunday</p>
 
         {/* Simple visual diagram */}
-        <div className="mt-4 overflow-hidden rounded-2xl border border-orthodox-gold/30 bg-orthodox-parchment p-4">
+        <div className="mt-4 overflow-hidden rounded-2xl border border-orthodox-gold/55 bg-orthodox-parchment p-4">
           <svg viewBox="0 0 320 120" className="mx-auto h-auto w-full max-w-sm" role="img" aria-label="Diagram of hands cupped right over left to receive a blessing">
             <text x="160" y="18" textAnchor="middle" fill="#e8d48b" fontSize="11">
               Hands: right over left, palms up
@@ -92,7 +90,7 @@ export function Priest() {
         </ol>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Pastoral notes</h2>
         <ul className="mt-2 list-disc space-y-2 pl-5 text-sm text-orthodox-cream/85">
           {priestPastoralNotes.map((n) => (

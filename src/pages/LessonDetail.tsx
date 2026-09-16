@@ -38,7 +38,7 @@ export function LessonDetail() {
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">{lesson.title}</h1>
       <p className="text-orthodox-cream/85">{lesson.summary}</p>
       {lesson.feastNote && (
-        <p className="rounded-xl border border-orthodox-gold/30 bg-orthodox-deep px-3 py-2 text-sm text-orthodox-gold-light">
+        <p className="rounded-xl border border-orthodox-gold/55 bg-orthodox-deep px-3 py-2 text-sm text-orthodox-gold-light">
           Feast / season note: {lesson.feastNote}
         </p>
       )}
@@ -82,7 +82,7 @@ export function LessonDetail() {
         </p>
         <ul className="space-y-2">
           {lesson.readings.map((r) => (
-            <li key={r.title} className="rounded-xl border border-orthodox-gold/30 px-3 py-2 text-sm">
+            <li key={r.title} className="rounded-xl border border-orthodox-gold/55 px-3 py-2 text-sm">
               <p className="font-semibold">{r.title}</p>
               <p className="text-orthodox-cream/75">{r.detail}</p>
               {r.url && (

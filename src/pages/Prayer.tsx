@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react'
 import { prayers } from '../data/prayers'
 import { TTSButton } from '../components/TTSButton'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { usePrayerChecks } from '../hooks/useProgress'
 
 export function Prayer() {
@@ -16,7 +15,6 @@ export function Prayer() {
   return (
     <div className="space-y-4 pb-10">
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Prayer</h1>
-      <PastoralDisclaimer compact />
 
       <div className="flex flex-wrap gap-2">
         {prayers.map((p) => (
@@ -27,7 +25,7 @@ export function Prayer() {
             className={`tap-target rounded-full px-3 py-2 text-sm font-semibold ${
               activeId === p.id
                 ? 'bg-orthodox-gold text-orthodox-navy'
-                : 'border border-orthodox-gold/40 text-orthodox-gold-light'
+                : 'border border-orthodox-gold/60 text-orthodox-gold-light'
             }`}
           >
             {p.title}
@@ -39,7 +37,7 @@ export function Prayer() {
         <button
           type="button"
           onClick={() => toggle(active.id === 'morning' ? 'morning' : 'evening')}
-          className="tap-target rounded-xl border border-orthodox-gold/40 px-4 py-2 text-sm"
+          className="tap-target rounded-xl border border-orthodox-gold/60 px-4 py-2 text-sm"
         >
           Mark {active.id} done today{' '}
           {(active.id === 'morning' ? todayChecks.morning : todayChecks.evening) ? '✓' : ''}
@@ -52,7 +50,7 @@ export function Prayer() {
       <TTSButton text={fullText} label="Read aloud (TTS)" />
 
       {active.id === 'jesus-prayer' && (
-        <div className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep p-4">
+        <div className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
           <p className="font-display text-lg text-orthodox-gold">Prayer rope</p>
           <div className="mt-3 flex flex-wrap justify-center gap-2" aria-hidden>
             {Array.from({ length: 33 }).map((_, i) => (
@@ -69,7 +67,7 @@ export function Prayer() {
 
       <div className="space-y-4">
         {active.sections.map((s) => (
-          <section key={s.title} className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep p-4">
+          <section key={s.title} className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
             <h2 className="font-display text-xl text-orthodox-gold">{s.title}</h2>
             <pre className="mt-3 whitespace-pre-wrap font-[family-name:var(--font-body)] text-sm leading-relaxed text-orthodox-cream/90">
               {s.text}

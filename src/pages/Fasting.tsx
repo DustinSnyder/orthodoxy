@@ -1,5 +1,4 @@
 import { fastSeasons2026, fastingDisclaimer, isWedOrFri, simplifiedFastLabel } from '../data/fasting'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { dailyEntries } from '../data/daily'
 
 function buildSeptemberGrid(year: number) {
@@ -22,12 +21,11 @@ export function Fasting() {
   return (
     <div className="space-y-4 pb-10">
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Fasting</h1>
-      <PastoralDisclaimer />
       <p className="rounded-xl border border-amber-400/40 bg-amber-950/40 px-3 py-2 text-sm text-amber-100">
         {fastingDisclaimer}
       </p>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Spirit of fasting</h2>
         <div className="prose-orthodox mt-2 text-sm">
           <p>
@@ -36,19 +34,19 @@ export function Fasting() {
             so that repentance, prayer, and almsgiving grow together.
           </p>
           <p>
-            Beginners should ask Fr. Symeon for a starting measure. Illness, heavy labor, and other needs change
+            Beginners should start with a modest measure. Illness, heavy labor, and other needs change
             the rule. Pride about fasting is worse than eating with humility.
           </p>
         </div>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Today</h2>
         <p className="font-medium">{todayLabel.label}</p>
         <p className="mt-1 text-sm text-orthodox-cream/80">{todayLabel.detail}</p>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Major seasons (2026 overview)</h2>
         <ul className="mt-3 space-y-3">
           {fastSeasons2026.map((s) => (
@@ -61,7 +59,7 @@ export function Fasting() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">September 2026 · Wed/Fri</h2>
         <p className="mb-3 text-xs text-orthodox-muted">
           Simplified view: Wednesdays and Fridays highlighted. Sample liturgic notes where provided.

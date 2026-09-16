@@ -7,6 +7,8 @@
   --color-orthodox-blue: #f7f1e3;
   --color-orthodox-gold: #c9a227;
   --color-orthodox-gold-light: #a8891c;
+  /* Darker brown-gold for card borders on white */
+  --color-orthodox-border: #8a7020;
   --color-orthodox-cream: #1a1a1a;
   --color-orthodox-parchment: #f3f0e8;
   --color-orthodox-ink: #1a1a1a;
@@ -96,4 +98,8 @@ body {
 .tap-target {
   min-height: 44px;
   min-width: 44px;
+}
+
+.card-orthodox {
+  border: 1px solid color-mix(in srgb, var(--color-orthodox-border) 85%, #000 15%);
 }

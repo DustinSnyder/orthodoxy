@@ -15,7 +15,7 @@ export default defineConfig({
         name: 'Orthodoxy — St. Raphael Catechumen Companion',
         short_name: 'Orthodoxy',
         description:
-          'Antiochian Orthodox catechumen companion for daily prayer, fasting, scripture, and catechesis. Personal learning only — Fr. Symeon overrides.',
+          'Antiochian Orthodox catechumen companion for daily prayer, fasting, scripture, and catechesis.',
         theme_color: '#ffffff',
         background_color: '#c9a227',
         display: 'standalone',

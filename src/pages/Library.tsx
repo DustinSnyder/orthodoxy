@@ -1,12 +1,10 @@
 import { Link } from 'react-router-dom'
 import { libraryItems } from '../data/library'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 
 export function Library() {
   return (
     <div className="space-y-4 pb-10">
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Library</h1>
-      <PastoralDisclaimer compact />
       <p className="text-sm text-orthodox-cream/80">
         Curated spine for an Antiochian catechumen. Purchase or read official free sources — never pirate.
         This app summarizes teaching; it does not reproduce copyrighted book chapters.
@@ -14,7 +12,7 @@ export function Library() {
 
       <Link
         to="/father-symeon"
-        className="tap-target block rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4 hover:border-orthodox-gold"
+        className="tap-target block rounded-2xl border border-orthodox-gold/60 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4 hover:border-orthodox-gold"
       >
         <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">Audio & video</p>
         <h2 className="font-display text-xl text-orthodox-gold">Fr. Symeon Kees media</h2>
@@ -26,7 +24,7 @@ export function Library() {
 
       <ul className="space-y-3">
         {libraryItems.map((item) => (
-          <li key={item.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+          <li key={item.id} className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
             <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">{item.kind}</p>
             <h2 className="font-display text-xl text-orthodox-gold">{item.title}</h2>
             <p className="text-sm text-orthodox-gold-light">{item.author}</p>

@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import {
   featuredEpisodes,
   mediaChannels,
@@ -27,7 +26,7 @@ function ExternalLink({
 export function FatherSymeon() {
   return (
     <div className="space-y-4 pb-10">
-      <header className="rounded-2xl bg-gradient-to-br from-orthodox-blue to-orthodox-deep p-4 ring-1 ring-orthodox-gold/30">
+      <header className="rounded-2xl bg-gradient-to-br from-orthodox-blue to-orthodox-deep p-4 ring-1 ring-orthodox-gold/50">
         <p className="text-xs font-semibold uppercase tracking-wide text-orthodox-gold">
           Public media · St. Raphael
         </p>
@@ -39,17 +38,14 @@ export function FatherSymeon() {
         </p>
       </header>
 
-      <PastoralDisclaimer compact />
-
       <aside
-        className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4"
+        className="rounded-2xl border border-orthodox-gold/60 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4"
         role="note"
       >
         <h2 className="font-display text-lg text-orthodox-gold">Listening note</h2>
         <p className="mt-2 text-sm leading-relaxed text-orthodox-cream/90">
           These resources <strong>complement</strong> parish worship and catechesis — they do not replace
-          them. If something confuses you, <strong>ask Fr. Symeon</strong>. This app does not speak for him
-          or for the parish.
+          them. This page collects public links only; it does not speak for the parish.
         </p>
       </aside>
 
@@ -59,7 +55,7 @@ export function FatherSymeon() {
           {mediaChannels.map((ch) => (
             <li
               key={ch.id}
-              className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4"
+              className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4"
             >
               <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">
                 {ch.kind === 'youtube' ? 'YouTube' : 'Podcast'}
@@ -99,7 +95,7 @@ export function FatherSymeon() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4">
+      <section className="rounded-2xl border border-orthodox-gold/60 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Start here for catechumens</h2>
         <p className="mt-1 text-sm text-orthodox-cream/80">
           A shortlist for newcomers — prayer, formation, liturgics, and the Apostolic Fathers.
@@ -109,7 +105,7 @@ export function FatherSymeon() {
             <li key={p.id}>
               <ExternalLink
                 href={p.url}
-                className="tap-target block rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3 hover:border-orthodox-gold/60"
+                className="tap-target block rounded-xl border border-orthodox-gold/55 bg-orthodox-parchment px-3 py-3 hover:border-orthodox-gold/80"
               >
                 <p className="font-semibold text-orthodox-gold-light">{p.title} ↗</p>
                 <p className="text-xs text-orthodox-muted">{p.show}</p>
@@ -129,7 +125,7 @@ export function FatherSymeon() {
           {featuredEpisodes.map((ep) => (
             <li
               key={ep.id}
-              className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep px-4 py-3"
+              className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep px-4 py-3"
             >
               <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">
                 {ep.show}
@@ -148,7 +144,7 @@ export function FatherSymeon() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4 text-sm">
+      <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4 text-sm">
         <h2 className="font-display text-xl text-orthodox-gold">Parish first</h2>
         <p className="mt-2 text-orthodox-cream/85">
           Come to Vespers and Liturgy. Meet Fr. Symeon. Let the services teach you — then use these
@@ -163,7 +159,7 @@ export function FatherSymeon() {
           </Link>
           <Link
             to="/priest"
-            className="tap-target inline-flex rounded-full border border-orthodox-gold/40 px-4 py-2 text-sm font-semibold text-orthodox-gold-light"
+            className="tap-target inline-flex rounded-full border border-orthodox-gold/60 px-4 py-2 text-sm font-semibold text-orthodox-gold-light"
           >
             Priest & blessings →
           </Link>

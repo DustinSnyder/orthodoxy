@@ -5,7 +5,6 @@ import {
   friendsFamilyGuidance,
   spouseChildrenGuidance,
 } from '../data/family'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { ProtestantBridge } from '../components/ProtestantBridge'
 import { Link } from 'react-router-dom'
 
@@ -19,7 +18,6 @@ export function Family() {
         Practical guidance when loved ones don’t know Orthodoxy, aren’t supportive, or aren’t converting
         with you. Tone: humble, non-combative, loving.
       </p>
-      <PastoralDisclaimer />
       <p className="rounded-xl border border-amber-400/40 bg-amber-950/40 px-3 py-2 text-sm text-amber-100">
         {familyDisclaimer}
       </p>
@@ -29,7 +27,7 @@ export function Family() {
           type="button"
           onClick={() => setTab('friends')}
           className={`tap-target flex-1 rounded-full px-3 py-2 text-sm font-semibold ${
-            tab === 'friends' ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/40'
+            tab === 'friends' ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/60'
           }`}
         >
           Friends & family
@@ -38,7 +36,7 @@ export function Family() {
           type="button"
           onClick={() => setTab('household')}
           className={`tap-target flex-1 rounded-full px-3 py-2 text-sm font-semibold ${
-            tab === 'household' ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/40'
+            tab === 'household' ? 'bg-orthodox-gold text-orthodox-navy' : 'border border-orthodox-gold/60'
           }`}
         >
           Spouse & children
@@ -52,7 +50,7 @@ export function Family() {
             your Protestant years. Explain Orthodoxy as seeking fullness in Christ — not scorning their faith.
           </ProtestantBridge>
 
-          <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+          <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
             <h2 className="font-display text-xl text-orthodox-gold">Gentle replies to hard myths</h2>
             <ul className="mt-3 space-y-3">
               {commonMyths.map((m) => (
@@ -65,7 +63,7 @@ export function Family() {
           </section>
 
           {friendsFamilyGuidance.map((card) => (
-            <section key={card.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+            <section key={card.id} className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
               <h2 className="font-display text-xl text-orthodox-gold">{card.title}</h2>
               <div className="mt-2 space-y-2 text-sm leading-relaxed text-orthodox-cream/90">
                 {card.body.map((p) => (
@@ -79,17 +77,17 @@ export function Family() {
 
       {tab === 'household' && (
         <>
-          <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-blue p-4 text-sm">
+          <section className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-blue p-4 text-sm">
             <p className="font-semibold text-orthodox-gold-light">Especially sensitive</p>
             <p className="mt-2 text-orthodox-cream/90">
               If your spouse or children are not becoming Orthodox with you: do not pressure. Love first.
-              Protect the unity of the home. Pray. Involve Fr. Symeon. Model the faith rather than coerce it.
+              Protect the unity of the home. Pray. Model the faith rather than coerce it.
               Never shame.
             </p>
           </section>
 
           {spouseChildrenGuidance.map((card) => (
-            <section key={card.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
+            <section key={card.id} className="rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep p-4">
               <h2 className="font-display text-xl text-orthodox-gold">{card.title}</h2>
               <div className="mt-2 space-y-2 text-sm leading-relaxed text-orthodox-cream/90">
                 {card.body.map((p) => (

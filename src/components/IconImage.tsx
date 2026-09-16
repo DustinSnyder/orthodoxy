@@ -17,7 +17,7 @@ export function IconImage({
   if (failed) {
     return (
       <div
-        className={`${sizeClass} ${className} flex items-center justify-center rounded-xl border border-orthodox-gold/30 bg-orthodox-deep text-center text-xs text-orthodox-gold-light`}
+        className={`${sizeClass} ${className} flex items-center justify-center rounded-xl border border-orthodox-gold/55 bg-orthodox-deep text-center text-xs text-orthodox-gold-light`}
       >
         Icon unavailable
         <span className="sr-only">{icon.alt}</span>
@@ -31,7 +31,7 @@ export function IconImage({
         src={icon.thumbUrl}
         alt={icon.alt}
         loading="lazy"
-        className={`${sizeClass} rounded-xl object-cover shadow-md ring-1 ring-orthodox-gold/40`}
+        className={`${sizeClass} rounded-xl object-cover shadow-md ring-1 ring-orthodox-gold/55`}
         onError={() => setFailed(true)}
       />
       <figcaption className="mt-1 text-[11px] leading-snug text-orthodox-muted">

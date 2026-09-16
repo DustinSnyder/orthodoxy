@@ -25,7 +25,7 @@ export const dailyEntries: DailyEntry[] = [
     fasting: {
       status: 'strict',
       label: 'Strict fast day (feast of the Cross pattern)',
-      detail: 'Many keep a strict fast on the Exaltation. Confirm parish practice with Fr. Symeon.',
+      detail: 'Many keep a strict fast on the Exaltation. Confirm parish practice.',
     },
     saintIds: [],
     saintName: 'Universal Exaltation of the Precious and Life-Giving Cross',
@@ -55,7 +55,7 @@ export const dailyEntries: DailyEntry[] = [
     fasting: {
       status: 'fast',
       label: 'Wednesday fast',
-      detail: 'Traditional abstinence from meat, dairy, and eggs; fish/wine/oil per local custom. Ask Fr. Symeon.',
+      detail: 'Traditional abstinence from meat, dairy, and eggs; fish/wine/oil per local custom.',
     },
     saintIds: ['chrysostom'],
     saintName: 'Holy Hieromartyr / weekday saints (sample)',

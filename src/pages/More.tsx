@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 
 const pastoral = [
   { to: '/questions', title: 'Questions to ask', desc: '18 essential newcomer / catechumen questions' },
@@ -22,7 +21,6 @@ export function More() {
   return (
     <div className="space-y-4 pb-8">
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">More</h1>
-      <PastoralDisclaimer compact />
 
       <section>
         <h2 className="mb-2 text-xs font-semibold uppercase tracking-wide text-orthodox-gold">
@@ -33,7 +31,7 @@ export function More() {
             <li key={l.to}>
               <Link
                 to={l.to}
-                className="tap-target block rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue px-4 py-4 hover:border-orthodox-gold"
+                className="tap-target block rounded-2xl border border-orthodox-gold/60 bg-gradient-to-br from-orthodox-deep to-orthodox-blue px-4 py-4 hover:border-orthodox-gold"
               >
                 <p className="font-semibold text-orthodox-gold">{l.title}</p>
                 <p className="text-sm text-orthodox-cream/75">{l.desc}</p>
@@ -52,7 +50,7 @@ export function More() {
             <li key={l.to}>
               <Link
                 to={l.to}
-                className="tap-target block rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep px-4 py-4 hover:border-orthodox-gold/50"
+                className="tap-target block rounded-2xl border border-orthodox-gold/55 bg-orthodox-deep px-4 py-4 hover:border-orthodox-gold/70"
               >
                 <p className="font-semibold text-orthodox-gold">{l.title}</p>
                 <p className="text-sm text-orthodox-cream/75">{l.desc}</p>

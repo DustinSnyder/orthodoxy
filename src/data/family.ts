@@ -164,4 +164,4 @@ export const spouseChildrenGuidance: GuidanceCard[] = [
 ]
 
 export const familyDisclaimer =
-  'Pastoral companion only — not legal, medical, or marital counseling. Fr. Symeon’s guidance (and professional help when needed) overrides anything here. Never shame a spouse or child for not converting with you.'
+  'Companion notes only — not legal, medical, or marital counseling. Seek professional help when needed. Never shame a spouse or child for not converting with you.'

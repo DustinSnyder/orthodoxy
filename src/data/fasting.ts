@@ -43,7 +43,7 @@ export function simplifiedFastLabel(date: Date): { label: string; detail: string
     return {
       label: date.getDay() === 3 ? 'Wednesday fast' : 'Friday fast',
       detail:
-        'Traditional outline: abstain from meat, dairy, and eggs. Fish, wine, and oil depend on the day’s rank. Always ask Fr. Symeon — especially for health, work, or travel.',
+        'Traditional outline: abstain from meat, dairy, and eggs. Fish, wine, and oil depend on the day’s rank. Adjust for health, work, or travel as needed.',
     }
   }
   return {
@@ -53,4 +53,4 @@ export function simplifiedFastLabel(date: Date): { label: string; detail: string
 }
 
 export const fastingDisclaimer =
-  'Educational only. Fasting rules are pastoral. Your priest’s blessing overrides any calendar in this app. Do not harm your health.'
+  'Educational outline only. Fasting practice varies; do not harm your health.'

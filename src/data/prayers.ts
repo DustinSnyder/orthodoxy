@@ -16,7 +16,7 @@ export const prayers: PrayerRule[] = [
   {
     id: 'morning',
     title: 'Morning Prayers',
-    summary: 'A simple morning rule suitable for a catechumen. Expand under Fr. Symeon’s guidance.',
+    summary: 'A simple morning rule suitable for a catechumen. Expand gradually as you grow.',
     note: 'Traditional common prayers of the Church. For a fuller rule, see an Antiochian or Jordanville pocket prayer book.',
     sections: [
       {
@@ -61,7 +61,7 @@ The Judge shall come suddenly, and the deeds of each shall be laid bare; but wit
     id: 'evening',
     title: 'Evening Prayers',
     summary: 'End the day with repentance, thanksgiving, and rest in God’s mercy.',
-    note: 'Traditional common prayers. Ask Fr. Symeon how long your evening rule should be.',
+    note: 'Traditional common prayers. Keep the evening rule short enough to finish with peace.',
     sections: [
       {
         title: 'Trisagion Prayers',
@@ -114,7 +114,7 @@ Or simply: Our Father… then: Bless, O Lord.`,
     id: 'jesus-prayer',
     title: 'The Jesus Prayer',
     summary: 'The heart of Orthodox prayer practice: invoking the Name of Jesus with humility.',
-    note: 'Begin simply. A prayer rope (komboskini / chotki) helps count repetitions. Ask Fr. Symeon before taking on a large number.',
+    note: 'Begin simply. A prayer rope (komboskini / chotki) helps count repetitions. Avoid jumping to a large number too soon.',
     sections: [
       {
         title: 'The Prayer',
@@ -132,8 +132,8 @@ Or simply: Our Father… then: Bless, O Lord.`,
 6. End with a simple thanksgiving and the Trisagion or “Through the prayers of our holy Fathers…”`,
       },
       {
-        title: 'Pastoral Note',
-        text: `The Jesus Prayer is powerful medicine. More is not always better at the start. Consistency under your priest’s blessing matters more than heroic numbers.`,
+        title: 'A gentle note',
+        text: `The Jesus Prayer is powerful medicine. More is not always better at the start. Consistency matters more than heroic numbers.`,
       },
     ],
   },
