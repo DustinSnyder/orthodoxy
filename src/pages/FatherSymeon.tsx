@@ -59,7 +59,7 @@ export function FatherSymeon() {
           {mediaChannels.map((ch) => (
             <li
               key={ch.id}
-              className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4"
+              className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4"
             >
               <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">
                 {ch.kind === 'youtube' ? 'YouTube' : 'Podcast'}
@@ -78,7 +78,7 @@ export function FatherSymeon() {
                 ))}
               </div>
               {ch.id === 'reorientnation' && (
-                <div className="mt-4 rounded-xl bg-orthodox-navy/50 px-3 py-3">
+                <div className="mt-4 rounded-xl bg-orthodox-parchment px-3 py-3">
                   <p className="text-xs font-semibold uppercase tracking-wide text-orthodox-gold-light">
                     Notable episode titles
                   </p>
@@ -109,7 +109,7 @@ export function FatherSymeon() {
             <li key={p.id}>
               <ExternalLink
                 href={p.url}
-                className="tap-target block rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 hover:border-orthodox-gold/60"
+                className="tap-target block rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3 hover:border-orthodox-gold/60"
               >
                 <p className="font-semibold text-orthodox-gold-light">{p.title} ↗</p>
                 <p className="text-xs text-orthodox-muted">{p.show}</p>
@@ -129,7 +129,7 @@ export function FatherSymeon() {
           {featuredEpisodes.map((ep) => (
             <li
               key={ep.id}
-              className="rounded-2xl border border-orthodox-gold/20 bg-orthodox-deep px-4 py-3"
+              className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep px-4 py-3"
             >
               <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">
                 {ep.show}
@@ -148,7 +148,7 @@ export function FatherSymeon() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4 text-sm">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4 text-sm">
         <h2 className="font-display text-xl text-orthodox-gold">Parish first</h2>
         <p className="mt-2 text-orthodox-cream/85">
           Come to Vespers and Liturgy. Meet Fr. Symeon. Let the services teach you — then use these

@@ -20,7 +20,7 @@ export function Challenges() {
 
   return (
     <div className="space-y-4 pb-10">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">Conversion challenges</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Conversion challenges</h1>
       <p className="text-sm text-orthodox-cream/85">
         Honest obstacles many Protestants meet on the way into Orthodoxy — and pastoral ways to walk
         through them. Your sincerity in seeking Christ is honored here; nothing below mocks that past.
@@ -33,7 +33,7 @@ export function Challenges() {
         clarity — never a substitute for his care or parish life.
       </ProtestantBridge>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-lg text-orthodox-gold">At a glance ({count})</h2>
         <ol className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
           {summary.map((s) => (
@@ -44,7 +44,7 @@ export function Challenges() {
                   setOpenId(s.id)
                   document.getElementById(`challenge-${s.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }}
-                className="tap-target flex w-full items-center gap-2 rounded-xl border border-orthodox-gold/20 bg-orthodox-navy/40 px-3 py-2 text-left text-sm text-orthodox-cream/90 hover:border-orthodox-gold/50"
+                className="tap-target flex w-full items-center gap-2 rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-2 text-left text-sm text-orthodox-cream/90 hover:border-orthodox-gold/50"
               >
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-orthodox-gold/20 text-xs font-bold text-orthodox-gold">
                   {s.n}
@@ -63,7 +63,7 @@ export function Challenges() {
             <li
               key={c.id}
               id={`challenge-${c.id}`}
-              className="overflow-hidden rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep scroll-mt-4"
+              className="overflow-hidden rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep scroll-mt-4"
             >
               <button
                 type="button"
@@ -83,7 +83,7 @@ export function Challenges() {
               </button>
 
               {open && (
-                <div className="space-y-4 border-t border-orthodox-gold/15 px-4 py-4">
+                <div className="space-y-4 border-t border-orthodox-gold/25 px-4 py-4">
                   <div className="rounded-xl border border-rose-400/25 bg-rose-950/30 px-3 py-3">
                     <p className="text-[10px] font-semibold uppercase tracking-wide text-rose-200/90">
                       The challenge
@@ -91,7 +91,7 @@ export function Challenges() {
                     <p className="mt-1 text-sm leading-relaxed text-orthodox-cream/90">{c.challenge}</p>
                   </div>
 
-                  <div className="rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/50 px-3 py-3">
+                  <div className="rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3">
                     <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-gold">
                       Orthodox framing
                     </p>
@@ -106,7 +106,7 @@ export function Challenges() {
                       {c.steps.map((step, i) => (
                         <li
                           key={step.slice(0, 48)}
-                          className="flex gap-2 rounded-xl bg-orthodox-navy/40 px-3 py-2 text-sm text-orthodox-cream/90"
+                          className="flex gap-2 rounded-xl bg-orthodox-parchment px-3 py-2 text-sm text-orthodox-cream/90"
                         >
                           <span className="font-bold text-orthodox-gold">{i + 1}.</span>
                           <span className="leading-relaxed">{step}</span>
@@ -117,7 +117,7 @@ export function Challenges() {
 
                   <ProtestantBridge>{c.bridge}</ProtestantBridge>
 
-                  <p className="rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/50 px-3 py-2 text-sm text-orthodox-gold-light">
+                  <p className="rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-2 text-sm text-orthodox-gold-light">
                     <strong>With Fr. Symeon:</strong> Bring this challenge by name. Parish pace and blessing
                     always come first — see{' '}
                     <Link to="/priest" className="underline">

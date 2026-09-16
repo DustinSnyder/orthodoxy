@@ -15,7 +15,7 @@ export function Prayer() {
 
   return (
     <div className="space-y-4 pb-10">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">Prayer</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Prayer</h1>
       <PastoralDisclaimer compact />
 
       <div className="flex flex-wrap gap-2">
@@ -69,7 +69,7 @@ export function Prayer() {
 
       <div className="space-y-4">
         {active.sections.map((s) => (
-          <section key={s.title} className="rounded-2xl border border-orthodox-gold/20 bg-orthodox-deep p-4">
+          <section key={s.title} className="rounded-2xl border border-orthodox-gold/30 bg-orthodox-deep p-4">
             <h2 className="font-display text-xl text-orthodox-gold">{s.title}</h2>
             <pre className="mt-3 whitespace-pre-wrap font-[family-name:var(--font-body)] text-sm leading-relaxed text-orthodox-cream/90">
               {s.text}

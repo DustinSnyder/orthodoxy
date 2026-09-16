@@ -31,7 +31,7 @@ export function LessonDetail() {
         ← All lessons
       </Link>
       <p className="text-xs uppercase tracking-wide text-orthodox-muted">{lesson.moduleTitle}</p>
-      <h1 className="font-display text-3xl text-orthodox-gold-light">{lesson.title}</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">{lesson.title}</h1>
       <p className="text-orthodox-cream/85">{lesson.summary}</p>
 
       {icon && <IconImage icon={icon} size="lg" />}
@@ -71,7 +71,7 @@ export function LessonDetail() {
         </p>
         <ul className="space-y-2">
           {lesson.readings.map((r) => (
-            <li key={r.title} className="rounded-xl border border-orthodox-gold/20 px-3 py-2 text-sm">
+            <li key={r.title} className="rounded-xl border border-orthodox-gold/30 px-3 py-2 text-sm">
               <p className="font-semibold">{r.title}</p>
               <p className="text-orthodox-cream/75">{r.detail}</p>
               {r.url && (

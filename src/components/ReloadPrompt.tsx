@@ -24,9 +24,9 @@ export function ReloadPrompt() {
   return (
     <div
       role="status"
-      className="fixed inset-x-0 top-0 z-50 mx-auto max-w-lg px-3 pt-3"
+      className="fixed inset-x-0 top-0 z-50 mx-auto max-w-3xl md:max-w-4xl px-3 pt-3"
     >
-      <div className="flex items-center justify-between gap-3 rounded-2xl border border-orthodox-gold/50 bg-orthodox-deep px-4 py-3 shadow-lg">
+      <div className="flex items-center justify-between gap-3 rounded-2xl border border-orthodox-gold/50 bg-white px-4 py-3 shadow-md">
         <p className="text-sm text-orthodox-cream">New content available.</p>
         <div className="flex gap-2">
           <button

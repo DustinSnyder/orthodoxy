@@ -21,13 +21,13 @@ export function Fasting() {
 
   return (
     <div className="space-y-4 pb-10">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">Fasting</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Fasting</h1>
       <PastoralDisclaimer />
       <p className="rounded-xl border border-amber-400/40 bg-amber-950/40 px-3 py-2 text-sm text-amber-100">
         {fastingDisclaimer}
       </p>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Spirit of fasting</h2>
         <div className="prose-orthodox mt-2 text-sm">
           <p>
@@ -42,17 +42,17 @@ export function Fasting() {
         </div>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Today</h2>
         <p className="font-medium">{todayLabel.label}</p>
         <p className="mt-1 text-sm text-orthodox-cream/80">{todayLabel.detail}</p>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Major seasons (2026 overview)</h2>
         <ul className="mt-3 space-y-3">
           {fastSeasons2026.map((s) => (
-            <li key={s.id} className="rounded-xl bg-orthodox-navy/60 px-3 py-2 text-sm">
+            <li key={s.id} className="rounded-xl bg-orthodox-parchment px-3 py-2 text-sm">
               <p className="font-semibold text-orthodox-gold-light">{s.name}</p>
               <p className="text-xs text-orthodox-muted">{s.approx2026}</p>
               <p className="mt-1">{s.summary}</p>
@@ -61,7 +61,7 @@ export function Fasting() {
         </ul>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">September 2026 · Wed/Fri</h2>
         <p className="mb-3 text-xs text-orthodox-muted">
           Simplified view: Wednesdays and Fridays highlighted. Sample liturgic notes where provided.
@@ -85,7 +85,7 @@ export function Fasting() {
                 className={`flex aspect-square items-center justify-center rounded-lg text-xs ${
                   fast
                     ? 'bg-orthodox-gold/25 font-semibold text-orthodox-gold'
-                    : 'bg-orthodox-navy/50 text-orthodox-cream/80'
+                    : 'bg-orthodox-parchment text-orthodox-cream/80'
                 }`}
               >
                 {date.getDate()}

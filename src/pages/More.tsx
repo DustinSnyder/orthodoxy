@@ -21,7 +21,7 @@ const links = [
 export function More() {
   return (
     <div className="space-y-4 pb-8">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">More</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">More</h1>
       <PastoralDisclaimer compact />
 
       <section>
@@ -52,7 +52,7 @@ export function More() {
             <li key={l.to}>
               <Link
                 to={l.to}
-                className="tap-target block rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep px-4 py-4 hover:border-orthodox-gold/50"
+                className="tap-target block rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep px-4 py-4 hover:border-orthodox-gold/50"
               >
                 <p className="font-semibold text-orthodox-gold">{l.title}</p>
                 <p className="text-sm text-orthodox-cream/75">{l.desc}</p>

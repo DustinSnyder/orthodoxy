@@ -14,7 +14,7 @@ export function Family() {
 
   return (
     <div className="space-y-4 pb-10">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">Family & friends</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Family & friends</h1>
       <p className="text-sm text-orthodox-cream/85">
         Practical guidance when loved ones don’t know Orthodoxy, aren’t supportive, or aren’t converting
         with you. Tone: humble, non-combative, loving.
@@ -52,11 +52,11 @@ export function Family() {
             your Protestant years. Explain Orthodoxy as seeking fullness in Christ — not scorning their faith.
           </ProtestantBridge>
 
-          <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+          <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
             <h2 className="font-display text-xl text-orthodox-gold">Gentle replies to hard myths</h2>
             <ul className="mt-3 space-y-3">
               {commonMyths.map((m) => (
-                <li key={m.myth} className="rounded-xl bg-orthodox-navy/50 px-3 py-3 text-sm">
+                <li key={m.myth} className="rounded-xl bg-orthodox-parchment px-3 py-3 text-sm">
                   <p className="font-semibold text-rose-200/90">{m.myth}</p>
                   <p className="mt-1 text-orthodox-cream/90">{m.gentleReply}</p>
                 </li>
@@ -65,7 +65,7 @@ export function Family() {
           </section>
 
           {friendsFamilyGuidance.map((card) => (
-            <section key={card.id} className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+            <section key={card.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
               <h2 className="font-display text-xl text-orthodox-gold">{card.title}</h2>
               <div className="mt-2 space-y-2 text-sm leading-relaxed text-orthodox-cream/90">
                 {card.body.map((p) => (
@@ -79,8 +79,8 @@ export function Family() {
 
       {tab === 'household' && (
         <>
-          <section className="rounded-2xl border border-sky-400/30 bg-sky-950/40 p-4 text-sm">
-            <p className="font-semibold text-sky-200">Especially sensitive</p>
+          <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-blue p-4 text-sm">
+            <p className="font-semibold text-orthodox-gold-light">Especially sensitive</p>
             <p className="mt-2 text-orthodox-cream/90">
               If your spouse or children are not becoming Orthodox with you: do not pressure. Love first.
               Protect the unity of the home. Pray. Involve Fr. Symeon. Model the faith rather than coerce it.
@@ -89,7 +89,7 @@ export function Family() {
           </section>
 
           {spouseChildrenGuidance.map((card) => (
-            <section key={card.id} className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+            <section key={card.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
               <h2 className="font-display text-xl text-orthodox-gold">{card.title}</h2>
               <div className="mt-2 space-y-2 text-sm leading-relaxed text-orthodox-cream/90">
                 {card.body.map((p) => (

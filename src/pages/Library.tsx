@@ -5,7 +5,7 @@ import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 export function Library() {
   return (
     <div className="space-y-4 pb-10">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">Library</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Library</h1>
       <PastoralDisclaimer compact />
       <p className="text-sm text-orthodox-cream/80">
         Curated spine for an Antiochian catechumen. Purchase or read official free sources — never pirate.
@@ -26,7 +26,7 @@ export function Library() {
 
       <ul className="space-y-3">
         {libraryItems.map((item) => (
-          <li key={item.id} className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+          <li key={item.id} className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
             <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">{item.kind}</p>
             <h2 className="font-display text-xl text-orthodox-gold">{item.title}</h2>
             <p className="text-sm text-orthodox-gold-light">{item.author}</p>

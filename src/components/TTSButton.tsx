@@ -34,7 +34,7 @@ export function TTSButton({ text, label = 'Listen' }: { text: string; label?: st
     <button
       type="button"
       onClick={toggle}
-      className="tap-target inline-flex items-center gap-2 rounded-full bg-orthodox-gold px-4 py-2 text-sm font-semibold text-orthodox-navy shadow hover:bg-orthodox-gold-light"
+      className="tap-target inline-flex items-center gap-2 rounded-full bg-orthodox-gold px-4 py-2 text-sm font-semibold text-orthodox-navy shadow hover:brightness-110"
       aria-pressed={speaking}
     >
       <span aria-hidden>{speaking ? '■' : '▶'}</span>

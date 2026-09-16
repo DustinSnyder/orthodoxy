@@ -38,7 +38,7 @@ export function Today() {
 
       <section className="rounded-2xl bg-gradient-to-br from-orthodox-blue to-orthodox-deep p-4 ring-1 ring-orthodox-gold/30">
         <p className="text-sm text-orthodox-gold-light">{dateLabel}</p>
-        <h1 className="font-display mt-1 text-3xl text-orthodox-cream">Today</h1>
+        <h1 className="font-display mt-1 text-3xl text-orthodox-ink md:text-4xl">Today</h1>
         <p className="mt-1 text-sm text-orthodox-cream/80">{entry.liturgicalNote}</p>
         {streak > 0 && (
           <p className="mt-3 inline-flex rounded-full bg-orthodox-gold/20 px-3 py-1 text-xs font-semibold text-orthodox-gold">
@@ -47,7 +47,7 @@ export function Today() {
         )}
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Fasting</h2>
         <p className="mt-1 font-medium">{inSample ? entry.fasting.label : liveFast.label}</p>
         <p className="mt-1 text-sm text-orthodox-cream/80">
@@ -56,7 +56,7 @@ export function Today() {
         <p className="mt-2 text-xs text-orthodox-muted">Ask Fr. Symeon — this is educational only.</p>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Prayer checks</h2>
         <div className="mt-3 grid grid-cols-2 gap-3">
           <button
@@ -87,7 +87,7 @@ export function Today() {
         </Link>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Scripture</h2>
         <p className="mt-2 text-sm">
           <span className="text-orthodox-gold-light">Epistle:</span> {entry.epistle}
@@ -108,7 +108,7 @@ export function Today() {
         </p>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Saint of the day</h2>
         <p className="mt-1 font-medium">{entry.saintName}</p>
         {icon && (
@@ -122,7 +122,7 @@ export function Today() {
       </section>
 
       {lesson && (
-        <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+        <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
           <h2 className="font-display text-xl text-orthodox-gold">Catechesis</h2>
           <p className="mt-1 text-xs uppercase tracking-wide text-orthodox-muted">{lesson.moduleTitle}</p>
           <p className="mt-1 font-semibold">{lesson.title}</p>
@@ -144,25 +144,25 @@ export function Today() {
         <div className="mt-3 grid grid-cols-1 gap-2">
           <Link
             to="/questions"
-            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
           >
             Top questions for newcomers →
           </Link>
           <Link
             to="/family"
-            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
           >
             Friends, spouse & children →
           </Link>
           <Link
             to="/priest"
-            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
           >
             Priest address & blessings →
           </Link>
           <Link
             to="/challenges"
-            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-navy/40 px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
+            className="tap-target rounded-xl border border-orthodox-gold/30 bg-orthodox-parchment px-3 py-3 text-sm font-semibold text-orthodox-gold-light"
           >
             Protestant conversion challenges →
           </Link>
@@ -183,7 +183,7 @@ export function Today() {
         </Link>
       </section>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Audio suggestion</h2>
         <p className="mt-1 text-sm">{entry.audio.title}</p>
         <a

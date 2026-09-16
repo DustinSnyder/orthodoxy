@@ -16,8 +16,8 @@ export default defineConfig({
         short_name: 'Orthodoxy',
         description:
           'Antiochian Orthodox catechumen companion for daily prayer, fasting, scripture, and catechesis. Personal learning only — Fr. Symeon overrides.',
-        theme_color: '#0b1d3a',
-        background_color: '#0b1d3a',
+        theme_color: '#ffffff',
+        background_color: '#c9a227',
         display: 'standalone',
         orientation: 'portrait-primary',
         start_url: '/orthodoxy/',

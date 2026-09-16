@@ -10,7 +10,7 @@ export function IconsGallery() {
 
   return (
     <div className="space-y-4 pb-10">
-      <h1 className="font-display text-3xl text-orthodox-gold-light">Icons</h1>
+      <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">Icons</h1>
       <PastoralDisclaimer compact />
 
       <ProtestantBridge>
@@ -20,7 +20,7 @@ export function IconsGallery() {
         slowly and keep Christ at the center.
       </ProtestantBridge>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4 text-sm">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4 text-sm">
         <h2 className="font-display text-xl text-orthodox-gold">Veneration vs worship</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>
@@ -51,7 +51,7 @@ export function IconsGallery() {
         ))}
       </div>
 
-      <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
+      <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
         <h2 className="font-display text-2xl text-orthodox-gold">{current.title}</h2>
         <p className="mt-1 text-sm">{current.description}</p>
         <button
