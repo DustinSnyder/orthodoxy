@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { getLesson } from '../data/lessons'
+import { getLesson, lessons } from '../data/lessons'
 import { getIcon } from '../data/icons'
 import { IconImage } from '../components/IconImage'
 import { ProtestantBridge } from '../components/ProtestantBridge'
@@ -24,15 +24,25 @@ export function LessonDetail() {
 
   const icon = lesson.iconId ? getIcon(lesson.iconId) : undefined
   const done = isComplete(lesson.id)
+  const prev = lessons.find((l) => l.week === lesson.week - 1)
+  const next = lessons.find((l) => l.week === lesson.week + 1)
 
   return (
     <article className="space-y-4 pb-10">
       <Link to="/catechesis" className="text-sm text-orthodox-gold-light underline">
         ← All lessons
       </Link>
-      <p className="text-xs uppercase tracking-wide text-orthodox-muted">{lesson.moduleTitle}</p>
+      <p className="text-xs uppercase tracking-wide text-orthodox-muted">
+        Week {lesson.week} of 52 · {lesson.moduleTitle} · {lesson.season}
+      </p>
       <h1 className="font-display text-3xl text-orthodox-gold md:text-4xl">{lesson.title}</h1>
       <p className="text-orthodox-cream/85">{lesson.summary}</p>
+      {lesson.feastNote && (
+        <p className="rounded-xl border border-orthodox-gold/30 bg-orthodox-deep px-3 py-2 text-sm text-orthodox-gold-light">
+          Feast / season note: {lesson.feastNote}
+        </p>
+      )}
+      <p className="text-xs text-orthodox-muted">Week starts {lesson.weekStart} (Monday)</p>
 
       {icon && <IconImage icon={icon} size="lg" />}
 
@@ -67,7 +77,8 @@ export function LessonDetail() {
       <section>
         <h3 className="font-display text-xl text-orthodox-gold">Further reading</h3>
         <p className="mb-2 text-xs text-orthodox-muted">
-          Cite books; never paste copyrighted chapters. Prefer links and your own notes.
+          Cite books; never paste copyrighted chapters. Prefer links and your own notes. Official
+          Antiochian links included for compliance.
         </p>
         <ul className="space-y-2">
           {lesson.readings.map((r) => (
@@ -108,6 +119,23 @@ export function LessonDetail() {
       >
         {done ? 'Mark incomplete' : 'Mark complete'}
       </button>
+
+      <div className="flex justify-between gap-3 text-sm">
+        {prev ? (
+          <Link to={`/catechesis/${prev.id}`} className="text-orthodox-gold-light underline">
+            ← Week {prev.week}
+          </Link>
+        ) : (
+          <span />
+        )}
+        {next ? (
+          <Link to={`/catechesis/${next.id}`} className="text-orthodox-gold-light underline">
+            Week {next.week} →
+          </Link>
+        ) : (
+          <span />
+        )}
+      </div>
     </article>
   )
 }

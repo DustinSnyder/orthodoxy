@@ -32,7 +32,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'christ-pantocrator',
     epistle: '1 Corinthians 1:18–24 (typical Cross readings — verify)',
     gospel: 'John 19:6–11, 13–20, 25–28, 30–35 (typical — verify)',
-    catechesisLessonId: 'orient-1',
+    catechesisLessonId: 'week-02',
     audio: { title: 'Ancient Faith — browse Cross / feast talks', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -45,7 +45,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'christ-pantocrator',
     epistle: 'Galatians 2:21–3:7 (sample weekday — verify live)',
     gospel: 'Mark 6:1–7 (sample — verify live)',
-    catechesisLessonId: 'orient-2',
+    catechesisLessonId: 'week-02',
     audio: { title: 'Intro to Orthodoxy podcast', url: 'https://www.ancientfaith.com/podcasts' },
   },
   {
@@ -62,7 +62,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'st-john-chrysostom',
     epistle: 'Galatians 3:15–22 (sample)',
     gospel: 'Mark 6:7–13 (sample)',
-    catechesisLessonId: 'scripture-1',
+    catechesisLessonId: 'week-05',
     audio: { title: 'Orthodoxy Live', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -75,7 +75,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'theotokos-vladimir',
     epistle: 'Galatians 3:23–4:5 (sample)',
     gospel: 'Mark 6:30–45 (sample)',
-    catechesisLessonId: 'trinity-1',
+    catechesisLessonId: 'week-04',
     audio: { title: 'Ancient Faith Radio', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -92,7 +92,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'st-raphael-brooklyn',
     epistle: 'Galatians 4:8–21 (sample)',
     gospel: 'Mark 6:45–56 (sample)',
-    catechesisLessonId: 'trinity-2',
+    catechesisLessonId: 'week-03',
     audio: { title: 'Search AFM: fasting', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -105,7 +105,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'st-raphael-brooklyn',
     epistle: '1 Corinthians 1:26–29 (sample Saturday)',
     gospel: 'John 8:21–30 (sample)',
-    catechesisLessonId: 'liturgy-1',
+    catechesisLessonId: 'week-47',
     audio: { title: 'Prepare heart for Liturgy', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -118,7 +118,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'resurrection',
     epistle: 'Galatians 2:16–20 (sample Sunday — verify)',
     gospel: 'Mark 8:34–9:1 (sample Sunday — verify)',
-    catechesisLessonId: 'theosis-1',
+    catechesisLessonId: 'week-25',
     audio: { title: 'Sunday sermon archives (AFM)', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -131,7 +131,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'peter-paul',
     epistle: 'Galatians 4:28–5:10 (sample)',
     gospel: 'Luke 3:19–22 (sample — Luke year patterns vary)',
-    catechesisLessonId: 'theotokos-1',
+    catechesisLessonId: 'week-16',
     audio: { title: 'Intro to Orthodoxy', url: 'https://www.ancientfaith.com/podcasts' },
   },
   {
@@ -144,7 +144,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'christ-pantocrator',
     epistle: 'Galatians 5:11–21 (sample)',
     gospel: 'Luke 3:23–4:1 (sample)',
-    catechesisLessonId: 'mysteries-1',
+    catechesisLessonId: 'week-26',
     audio: { title: 'AFM podcasts', url: 'https://www.ancientfaith.com/podcasts' },
   },
   {
@@ -161,7 +161,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'baptism-christ',
     epistle: 'Galatians 5:22–6:2 (sample)',
     gospel: 'Luke 4:1–15 (sample)',
-    catechesisLessonId: 'prayer-1',
+    catechesisLessonId: 'week-08',
     audio: { title: 'AFM: prayer', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -174,7 +174,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'theotokos-vladimir',
     epistle: 'Ephesians 1:1–9 (sample)',
     gospel: 'Luke 4:16–22 (sample)',
-    catechesisLessonId: 'fasting-1',
+    catechesisLessonId: 'week-33',
     audio: { title: 'AFM: lives of saints', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -191,7 +191,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'rublev-trinity',
     epistle: 'Ephesians 1:7–17 (sample)',
     gospel: 'Luke 4:22–30 (sample)',
-    catechesisLessonId: 'icons-1',
+    catechesisLessonId: 'week-19',
     audio: { title: 'AFM: icons', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -204,7 +204,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'christ-pantocrator',
     epistle: '1 John 4:12–19 (sample for Theologian — verify)',
     gospel: 'John 19:25–27; 21:24–25 (sample — verify)',
-    catechesisLessonId: 'history-1',
+    catechesisLessonId: 'week-09',
     audio: { title: 'AFM Scripture talks', url: 'https://www.ancientfaith.com/' },
   },
   {
@@ -217,7 +217,7 @@ export const dailyEntries: DailyEntry[] = [
     iconId: 'resurrection',
     epistle: '2 Corinthians 4:6–15 (sample — verify)',
     gospel: 'Luke 5:1–11 (sample Luke Sunday — verify)',
-    catechesisLessonId: 'orient-1',
+    catechesisLessonId: 'week-02',
     audio: { title: 'Listen while commuting to church', url: 'https://www.ancientfaith.com/' },
   },
 ]

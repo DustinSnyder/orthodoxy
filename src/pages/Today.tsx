@@ -3,7 +3,7 @@ import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { IconImage } from '../components/IconImage'
 import { getDailyOrNearest, toISODate } from '../data/daily'
 import { getIcon } from '../data/icons'
-import { getLesson } from '../data/lessons'
+import { currentChurchLesson, getChurchWeek } from '../data/lessons'
 import { usePrayerChecks, useStreak } from '../hooks/useProgress'
 import { useEffect } from 'react'
 import { liturgicDayUrl } from '../data/scripture'
@@ -14,7 +14,8 @@ export function Today() {
   const iso = toISODate(today)
   const entry = getDailyOrNearest(iso)
   const icon = getIcon(entry.iconId)
-  const lesson = getLesson(entry.catechesisLessonId)
+  const church = getChurchWeek(today)
+  const lesson = currentChurchLesson(today)
   const { todayChecks, toggle } = usePrayerChecks()
   const { streak, recordActivity } = useStreak()
   const liveFast = simplifiedFastLabel(today)
@@ -123,15 +124,20 @@ export function Today() {
 
       {lesson && (
         <section className="rounded-2xl border border-orthodox-gold/35 bg-orthodox-deep p-4">
-          <h2 className="font-display text-xl text-orthodox-gold">Catechesis</h2>
-          <p className="mt-1 text-xs uppercase tracking-wide text-orthodox-muted">{lesson.moduleTitle}</p>
+          <h2 className="font-display text-xl text-orthodox-gold">This week’s catechesis</h2>
+          <p className="mt-1 text-xs uppercase tracking-wide text-orthodox-muted">
+            Week {church.week}/52 · {lesson.moduleTitle} · {lesson.season}
+          </p>
           <p className="mt-1 font-semibold">{lesson.title}</p>
           <p className="mt-1 text-sm text-orthodox-cream/80">{lesson.summary}</p>
+          {lesson.feastNote && (
+            <p className="mt-1 text-xs text-orthodox-gold-light">{lesson.feastNote}</p>
+          )}
           <Link
             to={`/catechesis/${lesson.id}`}
             className="tap-target mt-3 inline-flex rounded-full border border-orthodox-gold px-4 py-2 text-sm font-semibold text-orthodox-gold"
           >
-            Continue lesson
+            Open Week {lesson.week} lesson
           </Link>
         </section>
       )}
