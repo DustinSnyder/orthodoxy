@@ -75,6 +75,18 @@ export const libraryItems: LibraryItem[] = [
     ],
   },
   {
+    id: 'fr-symeon-media',
+    title: 'Fr. Symeon Kees — YouTube & podcasts',
+    author: 'Paradosis Pavilion · Christian Saints · ReOrientNation',
+    why: 'Public teaching for catechumens. See the Fr. Symeon media page in-app — outbound links only; do not pirate audio.',
+    kind: 'audio',
+    links: [
+      { label: 'Paradosis Pavilion YouTube', url: 'https://www.youtube.com/@paradosispavilion9555' },
+      { label: 'Christian Saints Podcast', url: 'https://christiansaints.buzzsprout.com/' },
+      { label: 'ReOrientNation', url: 'https://podcast.app/reorientnation-p6835632' },
+    ],
+  },
+  {
     id: 'antiochian-edu',
     title: 'Antiochian Archdiocese Education',
     author: 'antiochian.org',

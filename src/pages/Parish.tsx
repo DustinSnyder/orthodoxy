@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 import { getIcon } from '../data/icons'
 import { IconImage } from '../components/IconImage'
@@ -47,6 +48,21 @@ export function Parish() {
         <p className="mt-3 text-xs text-amber-200">
           Always confirm on the parish calendar — feast days, special services, and seasonal changes happen.
         </p>
+      </section>
+
+
+      <section className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4">
+        <h2 className="font-display text-xl text-orthodox-gold">Listen to Fr. Symeon</h2>
+        <p className="mt-2 text-sm text-orthodox-cream/85">
+          Public YouTube and podcast resources for catechumens — Paradosis Pavilion, Christian Saints
+          Podcast, and ReOrientNation. Outbound links only; ask him about anything confusing.
+        </p>
+        <Link
+          to="/father-symeon"
+          className="tap-target mt-3 inline-flex rounded-full bg-orthodox-gold px-4 py-2 text-sm font-semibold text-orthodox-navy"
+        >
+          Fr. Symeon media →
+        </Link>
       </section>
 
       <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4 text-sm">

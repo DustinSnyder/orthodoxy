@@ -169,6 +169,20 @@ export function Today() {
         </div>
       </section>
 
+
+      <section className="rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4">
+        <h2 className="font-display text-xl text-orthodox-gold">Fr. Symeon media</h2>
+        <p className="mt-1 text-sm text-orthodox-cream/80">
+          YouTube & podcasts for catechumens — Paradosis Pavilion, Christian Saints, ReOrientNation.
+        </p>
+        <Link
+          to="/father-symeon"
+          className="tap-target mt-3 inline-flex rounded-full bg-orthodox-gold px-4 py-2 text-sm font-semibold text-orthodox-navy"
+        >
+          Listen / watch →
+        </Link>
+      </section>
+
       <section className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
         <h2 className="font-display text-xl text-orthodox-gold">Audio suggestion</h2>
         <p className="mt-1 text-sm">{entry.audio.title}</p>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { libraryItems } from '../data/library'
 import { PastoralDisclaimer } from '../components/PastoralDisclaimer'
 
@@ -10,6 +11,19 @@ export function Library() {
         Curated spine for an Antiochian catechumen. Purchase or read official free sources — never pirate.
         This app summarizes teaching; it does not reproduce copyrighted book chapters.
       </p>
+
+      <Link
+        to="/father-symeon"
+        className="tap-target block rounded-2xl border border-orthodox-gold/40 bg-gradient-to-br from-orthodox-deep to-orthodox-blue p-4 hover:border-orthodox-gold"
+      >
+        <p className="text-[10px] font-semibold uppercase tracking-wide text-orthodox-muted">Audio & video</p>
+        <h2 className="font-display text-xl text-orthodox-gold">Fr. Symeon Kees media</h2>
+        <p className="mt-1 text-sm text-orthodox-cream/80">
+          Paradosis Pavilion YouTube, Christian Saints Podcast, ReOrientNation — outbound links for catechumens.
+        </p>
+        <p className="mt-2 text-sm font-semibold text-orthodox-gold-light">Open media page →</p>
+      </Link>
+
       <ul className="space-y-3">
         {libraryItems.map((item) => (
           <li key={item.id} className="rounded-2xl border border-orthodox-gold/25 bg-orthodox-deep p-4">
